@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurgen Schulze | Medical AR & VR Showcase</title>
+    <style>
+        :root {
+            --primary-color: #fffc00; /* Snap Yellow */
+            --text-main: #111111;
+            --text-light: #555555;
+            --bg-light: #f4f4f4;
+            --white: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+        header {
+            background-color: var(--white);
+            padding: 4rem 10%;
+            border-bottom: 4px solid var(--primary-color);
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--text-main);
+            text-align: center;
+        }
+        /* Video Section */
+        .featured-media {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            background-color: #000;
+            margin-bottom: 1.5rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .featured-media h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        .featured-media p {
+            color: var(--text-light);
+        }
+        .featured-media a {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        /* Project Grid */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        .project-card {
+            background: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .project-content {
+            padding: 2rem;
+        }
+        .project-content h3 {
+            margin: 0 0 1rem 0;
+            font-size: 1.4rem;
+            color: var(--text-main);
+        }
+        .project-content p {
+            margin: 0;
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background-color: var(--white);
+            color: var(--text-light);
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jurgen Schulze, Ph.D.</h1>
+        <p>Pioneering Medical Applications for Specs at Snap, Inc.<br>In collaboration with Kelsi Greider, M.D.</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">Patient-Driven Innovation & Research</h2>
+        
+        <section class="featured-media">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" title="KPBS Feature Video Placeholder" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>Why a UC San Diego Professor Planned His Surgery In Virtual Reality</h3>
+            <p>Featured on KPBS, this segment covers my personal journey of translating my own MRI and CT scan data into a fully explorable 3D virtual environment. By viewing the complex anatomy in a headset prior to the operation, both the surgical team and I gained an unprecedented understanding of the spatial relationships of the anatomy, highlighting the immense potential of spatial computing in pre-operative planning and patient education.</p>
+            <a href="https://www.kpbs.org/news/2017/mar/09/why-uc-san-diego-professor-planned-his-surgery-vir/" target="_blank">Read the full story on KPBS &rarr;</a>
+        </section>
+
+        <section class="featured-media">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/t30uQgou68w?rel=0" title="VR Software Overview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h3>VR Software Overview: 3D Medical Imaging</h3>
+            <p>A comprehensive demonstration of virtual reality software designed for rendering and interacting with volumetric medical imaging data. This overview highlights advanced interaction techniques for exploring CT and MRI scans in an immersive environment, demonstrating the foundational software capabilities required for the next generation of medical AR tools.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Foundational Research & Concepts</h2>
+            <div class="project-grid">
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Holographic-Guided Surgical Overlay</h3>
+                        <p>Superimposing highly accurate 3D augmented reality models directly onto patient anatomy. This eliminates the need for surgeons to look away from the operative field to separate 2D monitors, reducing cognitive load and increasing surgical precision during complex procedures.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Immersive Surgical Telementoring</h3>
+                        <p>Transitioning from 2D teleconferencing to 3D spatial communication for remote medical guidance. By utilizing lightweight wearable AR, expert surgeons can place dynamic, depth-accurate visual cues directly into the exact field of view of a novice surgeon.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Volumetric Medical Imaging</h3>
+                        <p>Developing rendering pipelines that seamlessly convert standard hospital DICOM data (MRI/CT scans) into explorable volumetric models. This work empowers medical teams to walk through and inspect patient-specific anatomy in 3D prior to making a single incision.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jurgen Schulze.</p>
+    </footer>
+
+</body>
+</html>
